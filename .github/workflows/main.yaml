@@ -15,7 +15,7 @@ jobs:
         node-version: 14
 
      - name: Install dependencies
-       run: npm install -prod
+       run: npm install && yarn audit
      - name: build 
        run: npm run build --if-present
      - name: test app
